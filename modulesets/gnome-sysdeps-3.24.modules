@@ -1262,4 +1262,30 @@
     <pkg-config>zlib.pc</pkg-config>
     <branch repo="system"/>
   </systemmodule>
+
+  <systemmodule id="coreutils">
+    <branch repo="system"/>
+    <systemdependencies>
+      <dep type="path" name="base64">
+        <altdep type="path" name="gbase64"/>
+      </dep>
+      <dep type="path" name="sha256sum">
+        <altdep type="path" name="gsha256sum"/>
+      </dep>
+      <dep type="path" name="head">
+        <altdep type="path" name="ghead"/>
+      </dep>
+      <dep type="path" name="tr">
+        <altdep type="path" name="gtr"/>
+      </dep>
+    </systemdependencies>
+  </systemmodule>
+
+  <systemmodule id="jq">
+    <branch repo="system"/>
+    <systemdependencies>
+      <dep type="path" name="jq"/>
+    </systemdependencies>
+  </systemmodule>
+
 </moduleset>

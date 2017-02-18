@@ -3479,4 +3479,13 @@
     </dependencies>
   </autotools>
 
+  <cmake id="chrome-gnome-shell"
+      cmakeargs="-DBUILD_EXTENSION=OFF -DPython_ADDITIONAL_VERSIONS=3">
+    <branch/>
+    <dependencies>
+      <dep package="coreutils"/>
+      <dep package="jq"/>
+    </dependencies>
+  </cmake>
+
 </moduleset>
